@@ -11,6 +11,9 @@
 
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="https://use.typekit.net/fyf6uqe.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -21,10 +24,18 @@
 		<header id="navBar">
 			<img class="logo" src="images/logo.png" alt="MeltMedia Logo | Web Development, Web Apps">
 			<nav id="mainNav" role="navigation">
+				<ul id="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Labs</a></li>
+                    <li><a href="#">Thoughts</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 			</nav>
 		</header>
 
-		<div id="hero">
+		<div class="hero">
 			<section>
 				<main>
 					<h1>Heroic websites and apps <strong>for all viewports.</strong></h1>
@@ -35,29 +46,35 @@
 			</section>
 		</div>
 
-		<section>
-			<h2 class="blue">What We <strong>Do.</strong></h2>
-		</section>
+		<div class="whiteSection">
+			<section>
+				<h2 class="blue">What We <strong>Do.</strong></h2>
+				<p> We create a experiences that transform business for your brand and your users across all devices for the digital economy.</p>
+				<img src="images/icons.png" alt="Digital Marketing Analytics, ROI Icons">
+			</section>
+		</div>
 
-		<div id="callForSuperheros">
+		<div class="callForSuperheros">
 			<section>
 				<h2 class="white">Call For <strong>Superheros</strong></h2>
 				<a class="whiteButton" href="#" title="See Our Openings">See Our Openings</a>
 			</section>
 		</div>
 
-		<section>
-			<img src="images/video.jpg" alt="MeltMedia Video">
-		</section>
+		<div class="greySection">
+			<section>
+				<img src="images/video.jpg" alt="MeltMedia Video">
+			</section>
+		</div>
 
-		<div id="googleMap">
+		<div class="googleMap">
 			<section>
 				<h3>Get in <strong>touch</strong></h3>
 
 				<h4>Address:</h4>
 				<p>1255 W Rio Salado Pkwy<br>
 				Suite 209<br>
-				Tempe, AZ 85281<p>
+				Tempe, AZ 85281</p>
 
 				<h4>Phone:</h4>
 				<p>(602) 340-9440</p>
@@ -67,31 +84,31 @@
 			</section>
 		</div>
 
-		<section>
-			<h2 class="blue">Contact <strong>Us</strong></h2>
-			<p> Fill out the form below and someone will get back to you faster than a speeding bullet.</p>
-			
-			<form id="contactMeltMedia" action="mailto:#" method="post">
-          		<p> Fill out the form below and someone will get back to you faster than a speeding bullet.</p>
-            	<fieldset>
-                	<input placeholder="What is your name?" type="text" tabindex="1" required autofocus>
-            	</fieldset>
-            	<fieldset>
-                	<input placeholder="What is your email address?" type="email" tabindex="2" required>
-            	</fieldset>
-            	<fieldset>
-                	<input placeholder="What is your superpower?" type="text" tabindex="3" required>
-            	</fieldset>
-            	<fieldset>
-                	<input placeholder="What is your mission?" type="text" tabindex="4" required>
-            	</fieldset>
-            	<fieldset>
-                	<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            	</fieldset>
-        	</form>
-		</section>
+		<div class="whiteSection">
+			<section>
+				<h2 class="blue">Contact <strong>Us</strong></h2>
+				<form id="contactMeltMedia" action="mailto:#" method="post">
+          			<p> Fill out the form below and someone will get back to you faster than a speeding bullet.</p>
+            		<fieldset>
+                		<input placeholder="What is your name?" type="text" tabindex="1" required autofocus>
+            		</fieldset>
+            		<fieldset>
+                		<input placeholder="What is your email address?" type="email" tabindex="2" required>
+            		</fieldset>
+            		<fieldset>
+                		<input placeholder="What is your superpower?" type="text" tabindex="3" required>
+            		</fieldset>
+            		<fieldset>
+                		<input placeholder="What is your mission?" type="text" tabindex="4" required>
+            		</fieldset>
+            		<fieldset>
+                		<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            		</fieldset>
+        		</form>
+			</section>
+		</div>
 
-		<footer id="footerBar" role="contentinfo">
+		<footer class="footerBar" role="contentinfo">
 			<p>meltmedia © copyright 2014 - Interactive <strong>Superheroes</strong></p>
 		</footer>
 
