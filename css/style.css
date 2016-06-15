@@ -18,11 +18,11 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
+  margin: 0;
+  padding: 0;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -65,45 +65,351 @@ h1, h2, h3 {
   font-family: "adelle-sans",sans-serif;
 }
 
+h1, h2 {
+  font-size:3em;
+}
+
+h1 strong {
+    font-weight: 700;
+}
+
+h2.blue strong {
+    font-weight: 700;
+}
+
+h2.white strong {
+    font-weight: 700;
+}
+
+h3 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: .6em;
+}
+
+h3 strong {
+    font-weight: 700;
+}
+
+h4 {
+  color:#fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: .3em;
+}
+
 p {
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 1.4em;
+  font-weight: 300;
   line-height: 1.2;
 }
+
+/* Header */
+#navBar {
+  background-color:rgba(26,26,26,.6);
+  max-width:100%;
+  overflow:hidden;
+  width:100%;
+}
+
+.innerSection {
+  border-left: 2px dashed pink;
+  border-right: 2px dashed pink;
+  margin: 0px auto;
+  max-width:85%;
+  width: 85%;
+}
+
+/*Home Page*/
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+}
+
 
 /* Responsive Design - Desktop
 ---------------------------------------------------*/
 @media only screen and (min-width:780px) {
   
-  /* Header */
-  #navBar {
-    width:100%;
-    max-width:100%;
-    background-color:rgba(26,26,26,.6);
-    overflow:hidden;
+  /*Typography*/
+  h1, h2 {
+    font-size: 2.8em;
+    margin-bottom: .8em;
   }
 
-  /* Navigation */
-  #navigation {
-    width: 55%;
-    max-width: 55%;
+  h2.blue {
+    color:#8DB7E6;
+    font-size: 3em;
+    font-weight:300;
+    margin-bottom: .4em;
+    text-align:center;
+  }
+
+  h2.white {
+    color:#fff;
+    font-size: 3em;
+    font-weight:300;
+    margin-bottom: .8em;
+    text-align:center;
+  }
+
+  /*Header*/
+  #navBar {
+    height:6em;
+  }
+
+  .logo {
+    float:left;
+    margin: 15px 0px;
+  }
+
+  /*Navigation*/
+  #mainNav {
     float: right;
+    max-width: 85%;
+    text-align: right;
+    width: 85%;
+  }
+
+  #navigation {
+    font-family: "adelle-sans",sans-serif;
+    float: right;
+    margin-top:1.9em;
+    max-width: 35em;
+    width: 35em;
   }
 
   #navigation li a {
-    display: inline-block;
-    font-size: 1.2em;
-    font-family: "adelle-sans",sans-serif;
-    padding: 10px 12px;
-    float:left;
-    color:#fff;
-    text-decoration:none;
     border-bottom: 2px solid transparent;
+    font-size: 1.2em;
+    padding: .6em .8em;
+    font-weight: 300 !important;
+    color:#fff;
+    display: inline-block;
+    float:left;
+    text-decoration:none;
   }
 
   #navigation li a:hover {
-    color:#9FA45B;
-    border-bottom: 2px solid #9FA45B;
+    border-bottom: 2px solid #3A3A3C;
+  }
+
+  .hero {
+    margin-top: -100px;
+    height: 50em;
+  }
+
+  
+
+/* Edit Above This Line
+============================================*/
+
+  .mainSection {
+    margin-top:100px;
+    margin: 0px auto;
+    max-width:85%;
+    padding: 9.25em 0 6.25em 0;
+    width: 85%;
+  }
+
+  .hero > section > main {
+    color: #fff;
+    float: left;
+    margin: 0 2.5em 0 1.5em;
+    padding: 1em;
+    width: 50%;
+  }
+
+  .hero > section > main > p {
+    margin-bottom: 2em;
+  }
+
+  .hero > section > main > a {
+    margin-left: 0;
+    max-width: 94%;
+    width: 94%;
+  }
+
+  #wrapper > div.hero > section > img {
+    width: 40%;
+  }
+
+  /*What We Do Section*/
+  .whiteSection {
+    overflow: hidden;
+    padding: 3.13em 0;
+  }
+
+  .mainP {
+    text-align: center;
+    padding: 0 3.6em;
+    margin-bottom:1.5em;
+  }
+
+  .iconsROI {
+    display:block;
+    margin-top:1.5em;
+    margin:0px auto;
+  }
+
+  /*Call For Superheros Section*/
+  .callForSuperheros {
+    background-image: url(../images/careers_hero.jpg);
+    background-size: cover;
+    overflow: hidden;
+    padding: 3.13em 0;
+  }
+
+  .whiteButton {
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-family: "Lato",sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    margin: 0px auto;
+    padding: 0.6em;
+    text-align: center;
+    text-decoration: none;
+    width: 20%;
+  }
+
+  .whiteButton:hover {
+    background:#fff;
+    border: 1px solid #fff;
+    color:#3D3D3D;
+  }
+
+  /*Video Section*/
+  .greySection {
+    background-color:#E9E9E9;
+    padding: 3.13em 0;
+    overflow: hidden;
+  }
+
+  .video {
+    display: block;
+    margin: 0px auto;
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .hidden {
+    display:none;
+  }
+
+  /*Map Section*/
+  .map-responsive{
+    height:0;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    pointer-events: none;
+    position:relative;
+  }
+  .map-responsive iframe{
+    height:100%;
+    left:0;
+    pointer-events: none;
+    position:absolute;
+    top:0;
+    width:100%;
+  }
+
+  /*Remove Map Info Left Corner*/
+  #mapDiv > div > div:nth-child(10) {
+    display: none !important;
+  }
+
+  aside.mapSection {
+    background-color: rgba(26,26,26,.6);
+    margin-top: 6em;
+    max-width: 35%;
+    padding: 1.5em;
+    position: relative;
+    width: 35%;
+    z-index: 50;
+    margin-bottom:2em;
+  }
+
+  .contactInfo {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 1.6em;
+  }
+
+  .socialMediaIcons {
+    margin-top: .6em;
+  }
+
+  /* Contact Form */
+  .contactSection {
+    padding: 3.13em 0;
+    overflow: hidden;
+  }
+
+  #contactMeltMedia > fieldset {
+    float: left;
+    margin-bottom:1.5em;
+    margin-left: 1.4em;
+    max-width: 45%;
+    width: 45%;
+  }
+
+  #contactMeltMedia > fieldset > input[type="text"],
+  #contactMeltMedia > fieldset > input[type="email"] {
+    border: 1px solid #000;
+    color: #000 !important;
+    font-size: 1.1em;
+    font-weight: 300;
+    height: 3em;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #contactMeltMedia > fieldset:nth-child(5) {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  #contact-submit {
+    max-width: 92.4%;
+    width: 92.4%;
+    border: 1px solid #8DB7E6;
+    background-color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: .4em;
+    color: #8DB7E6;
+    margin-top: .3em;
+  }
+
+  #contact-submit:hover {
+    background-color:#8DB7E6;
+    border: 1px solid #8DB7E6;
+    color:#fff;
+  }
+  
+  /* Footer */
+  .footerBar {
+    background-color:#8DB7E6;
+    max-width:100%;
+    overflow:hidden;
+    width:100%;
+    height: 6em;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+    text-align:center;
+    color:#fff;
+    margin-top:1.2em;
+  }
+
+  .copyright strong {
+    font-weight:700;
   }
 
 }

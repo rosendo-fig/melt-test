@@ -22,21 +22,23 @@
 <body>
 	<div id="wrapper">
 		<header id="navBar">
-			<img class="logo" src="images/logo.png" alt="MeltMedia Logo | Web Development, Web Apps">
-			<nav id="mainNav" role="navigation">
-				<ul id="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Culture</a></li>
-                    <li><a href="#">Labs</a></li>
-                    <li><a href="#">Thoughts</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-			</nav>
+			<div class="innerSection">
+				<a href="#" title="MeltMedia"><img class="logo" src="images/logo.png" alt="MeltMedia Logo | Web Development, Web Apps"></a>
+				<nav id="mainNav">
+					<ul id="navigation">
+                    	<li><a href="#">Home</a></li>
+                    	<li><a href="#">Work</a></li>
+                    	<li><a href="#">Culture</a></li>
+                    	<li><a href="#">Labs</a></li>
+                    	<li><a href="#">Thoughts</a></li>
+                    	<li><a href="#">Contact</a></li>
+                	</ul>
+				</nav>
+			</div>
 		</header>
-
+		
 		<div class="hero">
-			<section>
+			<section class="mainSection">
 				<main>
 					<h1>Heroic websites and apps <strong>for all viewports.</strong></h1>
 					<p> We’re meltmedia and we’re on a mission. Quite simply, it’s to make our clients’ lives easier. We create an environment where business, technology, and design experts join forces to deliver innovative and sustainable digital solutions. And we have plenty of geeky fun along the way.</p>
@@ -47,48 +49,53 @@
 		</div>
 
 		<div class="whiteSection">
-			<section>
+			<section class="innerSection">
 				<h2 class="blue">What We <strong>Do.</strong></h2>
-				<p> We create a experiences that transform business for your brand and your users across all devices for the digital economy.</p>
-				<img src="images/icons.png" alt="Digital Marketing Analytics, ROI Icons">
+				<p class="mainP"> We create a experiences that transform business for your brand and your users across all devices for the digital economy.</p>
+				<img class="iconsROI" src="images/icons.png" alt="Digital Marketing Analytics, ROI Icons">
 			</section>
 		</div>
 
 		<div class="callForSuperheros">
-			<section>
+			<section class="innerSection">
 				<h2 class="white">Call For <strong>Superheros</strong></h2>
 				<a class="whiteButton" href="#" title="See Our Openings">See Our Openings</a>
 			</section>
 		</div>
 
 		<div class="greySection">
-			<section>
-				<img src="images/video.jpg" alt="MeltMedia Video">
+			<section class="innerSection">
+				<h2 class="hidden">MeltMedia on Vimeo</h2>
+				<img class="video" src="images/video.jpg" alt="MeltMedia Video">
 			</section>
 		</div>
 
-		<div class="googleMap">
-			<section>
-				<h3>Get in <strong>touch</strong></h3>
+		<div class="map-responsive">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.721615761168!2d-111.95908268408665!3d33.43050145768312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b123ffa17df11%3A0x911fa4b39b591145!2sMeltMedia!5e0!3m2!1sen!2sus!4v1465955229331" width="2500" height="550" style="border:0" allowfullscreen></iframe>
+			<section class="innerSection">
+				<h2 class="hidden">MeltMedia Tempe Location</h2>
+				<aside class="mapSection">
+					<h3>Get in <strong>touch</strong></h3>
 
-				<h4>Address:</h4>
-				<p>1255 W Rio Salado Pkwy<br>
-				Suite 209<br>
-				Tempe, AZ 85281</p>
+					<h4>Address:</h4>
+					<p class="contactInfo">1255 W Rio Salado Pkwy<br>
+					Suite 209<br>
+					Tempe, AZ 85281</p>
 
-				<h4>Phone:</h4>
-				<p>(602) 340-9440</p>
+					<h4>Phone:</h4>
+					<p class="contactInfo">(602) 340-9440</p>
 
-				<h4>Lets be friends:</h4>
-				<img src="images/social_media_icons.png" alt="MeltMedia Social Network Icons">
+					<h4>Lets be friends:</h4>
+					<img class="socialMediaIcons" src="images/social_media_icons.png" alt="MeltMedia Social Network Icons">
+				</aside>
 			</section>
 		</div>
 
-		<div class="whiteSection">
-			<section>
+		<div class="contactSection">
+			<section class="innerSection">
 				<h2 class="blue">Contact <strong>Us</strong></h2>
+				<p class="mainP"> Fill out the form below and someone will get back to you faster than a speeding bullet.</p>
 				<form id="contactMeltMedia" action="mailto:#" method="post">
-          			<p> Fill out the form below and someone will get back to you faster than a speeding bullet.</p>
             		<fieldset>
                 		<input placeholder="What is your name?" type="text" tabindex="1" required autofocus>
             		</fieldset>
@@ -99,8 +106,8 @@
                 		<input placeholder="What is your superpower?" type="text" tabindex="3" required>
             		</fieldset>
             		<fieldset>
-                		<input placeholder="What is your mission?" type="text" tabindex="4" required>
-            		</fieldset>
+    					<input placeholder="What is your mission?" type="text" tabindex="4" required>
+  					</fieldset>
             		<fieldset>
                 		<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             		</fieldset>
@@ -108,8 +115,8 @@
 			</section>
 		</div>
 
-		<footer class="footerBar" role="contentinfo">
-			<p>meltmedia © copyright 2014 - Interactive <strong>Superheroes</strong></p>
+		<footer class="footerBar">
+			<p class="copyright">meltmedia © copyright 2014 - Interactive <strong>Superheroes</strong></p>
 		</footer>
 
 	</div>
