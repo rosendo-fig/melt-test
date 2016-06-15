@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700);
+
 /* CSS Reset
 ---------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -62,7 +64,7 @@ table {
 }
 
 h1, h2, h3 {
-  font-family: "adelle-sans",sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 h1, h2 {
@@ -115,11 +117,9 @@ p {
 }
 
 .innerSection {
-  border-left: 2px dashed pink;
-  border-right: 2px dashed pink;
   margin: 0px auto;
-  max-width:85%;
-  width: 85%;
+  max-width:75em;
+  width: 75em;
 }
 
 /*Home Page*/
@@ -128,15 +128,13 @@ p {
   background-size: cover;
 }
 
-
-/* Responsive Design - Desktop
----------------------------------------------------*/
-@media only screen and (min-width:780px) {
-  
+/*Desktop
+====================================================*/ 
   /*Typography*/
   h1, h2 {
-    font-size: 2.8em;
-    margin-bottom: .8em;
+    font-size: 3.9em;
+    margin-bottom: .5em;
+    letter-spacing: 5px;
   }
 
   h2.blue {
@@ -174,11 +172,11 @@ p {
   }
 
   #navigation {
-    font-family: "adelle-sans",sans-serif;
+    font-family: 'Roboto Slab', serif;
     float: right;
     margin-top:1.9em;
-    max-width: 35em;
-    width: 35em;
+    max-width: 45em;
+    width: 45em;
   }
 
   #navigation li a {
@@ -190,6 +188,7 @@ p {
     display: inline-block;
     float:left;
     text-decoration:none;
+    text-transform:uppercase;
   }
 
   #navigation li a:hover {
@@ -198,20 +197,15 @@ p {
 
   .hero {
     margin-top: -100px;
-    height: 50em;
+    height: 53em;
   }
-
-  
-
-/* Edit Above This Line
-============================================*/
 
   .mainSection {
     margin-top:100px;
     margin: 0px auto;
-    max-width:85%;
+    max-width:75em;
     padding: 9.25em 0 6.25em 0;
-    width: 85%;
+    width: 75em;
   }
 
   .hero > section > main {
@@ -224,6 +218,7 @@ p {
 
   .hero > section > main > p {
     margin-bottom: 2em;
+    line-height: 1.7;
   }
 
   .hero > section > main > a {
@@ -302,12 +297,11 @@ p {
 
   /*Map Section*/
   .map-responsive{
-    height:0;
+    height:34em;
     overflow:hidden;
-    padding-bottom:56.25%;
-    pointer-events: none;
     position:relative;
   }
+
   .map-responsive iframe{
     height:100%;
     left:0;
@@ -315,11 +309,6 @@ p {
     position:absolute;
     top:0;
     width:100%;
-  }
-
-  /*Remove Map Info Left Corner*/
-  #mapDiv > div > div:nth-child(10) {
-    display: none !important;
   }
 
   aside.mapSection {
@@ -347,6 +336,16 @@ p {
   .contactSection {
     padding: 3.13em 0;
     overflow: hidden;
+  }
+
+  #group {
+    overflow: hidden;
+  }
+
+  #contactMeltMedia {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px 22px;
   }
 
   #contactMeltMedia > fieldset {
@@ -414,6 +413,11 @@ p {
 
 }
 
+/* Responsive Design - Laptop
+---------------------------------------------------*/
+@media only screen and (max-width: 1199px) and (min-width:780px) {
+
+}
 
 /* Responsive Design - Tablet
 ---------------------------------------------------*/
