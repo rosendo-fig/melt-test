@@ -224,17 +224,6 @@ p {
   width:100%;
 }
 
-aside.mapSection {
-  background-color: rgba(26,26,26,.6);
-  margin-top: 6em;
-  max-width: 35%;
-  padding: 1.5em;
-  position: relative;
-  width: 35%;
-  z-index: 50;
-  margin-bottom:2em;
-}
-
 .contactInfo {
   font-size: 1.1em;
   color: #fff;
@@ -421,6 +410,18 @@ aside.mapSection {
     width: 40%;
   }
 
+  /*Map Section*/
+  aside.mapSection {
+    background-color: rgba(26,26,26,.6);
+    margin-top: 6em;
+    max-width: 16em;
+    padding: 1.5em;
+    position: relative;
+    width: 16em;
+    z-index: 50;
+    margin-bottom:2em;
+  }
+
 }
 
 
@@ -511,6 +512,18 @@ aside.mapSection {
   .whiteButton {
     font-size: 1.1em;
     width: 30%;
+  }
+
+  /*Map Section*/
+  aside.mapSection {
+    background-color: rgba(26,26,26,.6);
+    margin-top: 6em;
+    max-width: 16em;
+    padding: 1.5em;
+    position: relative;
+    width: 16em;
+    z-index: 50;
+    margin-bottom:2em;
   }
 
   #contactMeltMedia {
@@ -739,6 +752,23 @@ aside.mapSection {
     padding: 3.13em 0 1em;
   }
 
+  .video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /*Map Section*/
+  aside.mapSection {
+    background-color: rgba(26,26,26,.6);
+    margin-top: 6em;
+    max-width: 16em;
+    padding: 1.5em;
+    position: relative;
+    width: 16em;
+    z-index: 50;
+    margin-bottom:2em;
+  }
+
   /* Footer */
   .copyright {
     font-size: 1em;
@@ -773,8 +803,16 @@ aside.mapSection {
     margin-bottom: .5em;
   }
 
-  p {
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
     font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.1em;
   }
 
   .whiteButton {
@@ -791,6 +829,27 @@ aside.mapSection {
   .iconsROI {
     max-width:90%;
     width:90%;
+  }
+
+  .video {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /*Map Section*/
+  aside.mapSection {
+    background-color: rgba(26,26,26,.6);
+    margin-top: 6em;
+    max-width: 16em;
+    padding: 1.5em;
+    position: relative;
+    width: 16em;
+    z-index: 50;
+    margin-bottom:2em;
+  }
+
+  .contactInfo {
+    font-size: .9em;
   }
 
   #contactMeltMedia {
