@@ -240,13 +240,12 @@ p {
   overflow: hidden;
 }
 
-#group {
-  overflow: hidden;
-}
-
 #contactMeltMedia {
-  width: 100%;
+  display:block;
+  margin: 0px auto;
   max-width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 #contactMeltMedia > fieldset {
@@ -320,6 +319,7 @@ p {
     margin: 0px auto;
     max-width:75em;
     width: 75em;
+    overflow:hidden;
   }
 
   .innerSectionNav {
@@ -428,7 +428,7 @@ p {
 /* Responsive Design - Laptop
 ---------------------------------------------------*/
 @media only screen and (max-width: 1199px) and (min-width:780px) {
-  
+
   .innerSectionNav {
     margin: 0px auto;
     max-width:90%;
@@ -526,16 +526,6 @@ p {
     margin-bottom:2em;
   }
 
-  #contactMeltMedia {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #contactMeltMedia > fieldset:nth-child(5) {
-    max-width: 101.5% !important;
-    width: 105% !important;
-  }
-
 }
 
 /* Responsive Design - Laptop, Tablet, Mobile
@@ -545,6 +535,7 @@ p {
     margin: 0px auto;
     max-width:90%;
     width: 90%;
+    overflow:hidden;
   }
 
   .mainSection {
@@ -703,6 +694,17 @@ p {
     display:none;
   }
 
+  /* Contact Form */
+  #contactMeltMedia > fieldset {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  #contact-submit {
+    max-width: 90.5%;
+    width: 90.5%;
+  }
+
 }
 
 /* Responsive Design - Tablet
@@ -850,11 +852,6 @@ p {
 
   .contactInfo {
     font-size: .9em;
-  }
-
-  #contactMeltMedia {
-    width: 88%;
-    max-width: 88%;
   }
 
   /* Footer */
