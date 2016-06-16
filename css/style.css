@@ -333,6 +333,12 @@ aside.mapSection {
     width: 75em;
   }
 
+  .innerSectionNav {
+    margin: 0px auto;
+    max-width:75em;
+    width: 75em;
+  }
+
   .mainSection {
     margin-top:100px;
     margin: 0px auto;
@@ -349,6 +355,10 @@ aside.mapSection {
   .logo {
     float:left;
     margin: 15px 0 0 35px;
+  }
+
+  button.dropbtn {
+    display: none;
   }
 
   /*Navigation*/
@@ -414,58 +424,16 @@ aside.mapSection {
 }
 
 
-/* Responsive Design - Laptop, Tablet, Mobile
+/* Responsive Design - Laptop
 ---------------------------------------------------*/
-@media only screen and (max-width: 1199px) {
-  .innerSection {
+@media only screen and (max-width: 1199px) and (min-width:780px) {
+  
+  .innerSectionNav {
     margin: 0px auto;
     max-width:90%;
     width: 90%;
   }
 
-  .mainSection {
-    margin-top:100px;
-    margin: 0px auto;
-    max-width: 90%;
-    padding: 9.25em 0 6.25em 0;
-    width: 90%;
-  }
-
-}
-
-/* Responsive Design - Desktop-Laptop Hero
----------------------------------------------------*/
-@media only screen and (max-width: 1199px) and (min-width:926px) {
-    h1, h2 {
-    font-size: 3em;
-    letter-spacing: 5px;
-  }
-
-  p {
-    font-size: 1.3em;
-  }
-
-}
-
-/* Responsive Design - Laptop-Tablet Hero
----------------------------------------------------*/
-@media only screen and (max-width: 925px) and (min-width:780px) {
-  h1, h2 {
-    font-size: 2em;
-    letter-spacing: 3px;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
-}
-
-
-/* Responsive Design - Laptop
----------------------------------------------------*/
-@media only screen and (max-width: 1199px) and (min-width:780px) {
-  
   /*Header*/
   #navBar {
     height:6em;
@@ -474,6 +442,10 @@ aside.mapSection {
   .logo {
     float:left;
     margin: 15px 0 0 35px;
+  }
+
+  button.dropbtn {
+    display: none;
   }
 
   /*Navigation*/
@@ -553,15 +525,283 @@ aside.mapSection {
 
 }
 
+/* Responsive Design - Laptop, Tablet, Mobile
+---------------------------------------------------*/
+@media only screen and (max-width: 1199px) {
+  .innerSection {
+    margin: 0px auto;
+    max-width:90%;
+    width: 90%;
+  }
+
+  .mainSection {
+    margin-top:100px;
+    margin: 0px auto;
+    max-width: 90%;
+    padding: 9.25em 0 6.25em 0;
+    width: 90%;
+  }
+
+}
+
+/* Responsive Design - Desktop-Laptop Hero
+---------------------------------------------------*/
+@media only screen and (max-width: 1199px) and (min-width:926px) {
+    h1, h2 {
+    font-size: 3em;
+    letter-spacing: 5px;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+}
+
+/* Responsive Design - Laptop-Tablet Hero
+---------------------------------------------------*/
+@media only screen and (max-width: 925px) and (min-width:780px) {
+  h1, h2 {
+    font-size: 2em;
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+}
+
+/* Responsive Design - Tablet | Mobile Nav
+---------------------------------------------------*/
+@media only screen and (max-width: 779px) {
+
+  .innerSectionNav {
+    margin: 0px auto;
+    max-width:100%;
+    width: 100%;
+  }
+
+  #navBar {
+    background-color: #002046;
+    border-bottom: 3px solid #fff;
+    max-width: 100%;
+    overflow:hidden;
+    position:relative;
+    width: 100%;
+  }
+
+  .logo {
+    display: block;
+    margin: .8em auto .2em;
+    max-width: 10%;
+    width: 10%;
+  }
+  
+  /* Mobile Navigation Bar */
+  .mobileNavBar {
+    float: left;
+    margin: .5em 0 0 .5em;
+  }
+
+  .bar {
+    width: 1.56em;
+    height: .3125em;
+    margin-bottom: .1875em;
+    background-color:#3E3831;
+    border-radius:1.56em
+  }
+
+/* Mobile Navigation*/
+  #navigation {
+    margin-top:4.5625em !important;
+  }
+
+  nav#mainNav {
+    clear: both;
+    min-width: 100%;
+    width: 100%;
+  }
+
+ #navigation li a {
+    background-color: #8DB7E6;
+    border-bottom: 2px solid #fff;
+    color:#002046;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    height: 1.8em;
+    max-width: 100%;
+    padding: .75em 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  #navigation > li:nth-child(8) > a {
+    border: none;
+  }
+
+  #navigation li a:hover {
+    background-color:#3A3A3C;
+    color:#fff;
+  }
+
+  .dropbtn {
+    background-color: #002046;
+    color: #fff;
+    display: block;
+    border: none;
+    padding: 0 0 1em 0;
+    width: 100%;
+    min-width: 100%;
+    font-size: 1em;
+    cursor: cell;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width:100%;
+    min-width:100%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 100%;
+    margin-top: -75px;
+    top: 2px;
+  }
+
+  .dropdown-content a:hover { 
+  background-color: #f1f1f1    
+  }
+
+  .dropdown:hover .dropdown-content { 
+    display: block;
+  }
+
+  /* Hidden Accessibilty Elements*/
+  .hidden {
+    display:none;
+  }
+
+}
+
 /* Responsive Design - Tablet
 ---------------------------------------------------*/
 @media only screen and (max-width: 779px) and (min-width:481px) {
+  
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero > section > img {
+      display: block;
+      margin: 0px auto 3em;
+      width: 65%;
+  }
+
+  .mainSection {
+    color: #fff;
+    padding: 3.5em 0 4.25em 0;
+  }
+
+  h1, h2,
+  h2.blue, h2.white {
+    font-size: 2.8em;
+    letter-spacing: 5px;
+    line-height:1.2;
+    margin-bottom: .5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .whiteButton {
+    float: left;
+    font-size: 1.2em;
+    margin: 1.5em auto 2em;
+    width: 90%;
+  }
+
+  .iconsROI {
+    max-width:90%;
+    width:90%;
+  }
+
+  .callForSuperheros {
+    padding: 3.13em 0 1em;
+  }
+
+  /* Footer */
+  .copyright {
+    font-size: 1em;
+  }
 
 }
 
 /* Responsive Design - Mobile
 ---------------------------------------------------*/
 @media only screen and (max-width: 480px) {
+
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero > section > img {
+      display: block;
+      margin: 0px auto 3em;
+      width: 60%;
+  }
+
+  .mainSection {
+    color: #fff;
+    padding: 3.5em 0 4.25em 0;
+  }
+
+  h1, h2,
+  h2.blue, h2.white {
+    font-size: 2.2em;
+    letter-spacing: 3px;
+    line-height:1.2;
+    margin-bottom: .5em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .whiteButton {
+    float: left;
+    font-size: 1.2em;
+    margin: 1.5em auto 2em;
+    width: 90%;
+  }
+
+  .callForSuperheros {
+    padding: 3.13em 0 1em;
+  }
+
+  .iconsROI {
+    max-width:90%;
+    width:90%;
+  }
+
+  #contactMeltMedia {
+    width: 88%;
+    max-width: 88%;
+  }
+
+  /* Footer */
+  .copyright {
+    font-size: 1em;
+  }
 
 }
 
